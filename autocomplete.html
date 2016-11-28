@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>autocomplete</title>
+	<script type="text/javascript" src="jquery-1.11.2.js"></script>
+	<script type="text/javascript" src="jquery-ui.min.js"></script>
+	<link rel="stylesheet" href="jquery-ui.min.css">
+	<script>
+		$(function(){
+			var data=[
+				"java",
+				"javascript",
+				"jsp",
+				"asp",
+				"php"
+			];
+			$("#tags").autocomplete({
+				source:data
+			});
+		});
+	</script>
+</head>
+<body>
+	<input id="tags">
+</body>
+</html>
